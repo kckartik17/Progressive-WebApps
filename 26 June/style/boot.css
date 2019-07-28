@@ -1,0 +1,38 @@
+header {
+  background: green;
+  height: 40px;
+  margin-bottom: 0px;
+
+  text-align: center;
+}
+footer {
+  background: burlywood;
+  height: 40px;
+  margin-bottom: 0px;
+
+  text-align: center;
+}
+
+.custimg {
+  margin-bottom: 20px;
+}
+
+.menulist {
+  background: cornflowerblue;
+}
+
+.img1 {
+  background: rosybrown;
+}
+
+.img2 {
+  background: gold;
+}
+
+.img3 {
+  background: yellowgreen;
+}
+
+#content {
+  min-height: calc(100vh - 40px);
+}

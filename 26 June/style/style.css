@@ -1,0 +1,48 @@
+ul {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 10px;
+}
+
+.row {
+  display: inline-flex;
+  width: 100%;
+}
+
+.imagetext {
+  display: table-row;
+}
+
+.child {
+  background-color: coral;
+  display: table-cell;
+  border: 5px solid black;
+}
+img {
+  display: block;
+  margin: 0px;
+}
+
+body {
+  margin: auto;
+}
+.menu {
+  background-color: blueviolet;
+  border: 5px solid black;
+}
+
+header {
+  background-color: antiquewhite;
+  height: 50px;
+  text-align: center;
+  margin: 0;
+}
+h3 {
+  margin-top: 0px;
+}
+
+footer {
+  background-color: aquamarine;
+  height: 50px;
+  text-align: center;
+}
