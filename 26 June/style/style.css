@@ -73,3 +73,10 @@ ul {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
+
+@media (max-width: 714px) {
+  .section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

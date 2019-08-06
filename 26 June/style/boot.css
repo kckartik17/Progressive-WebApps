@@ -1,20 +1,16 @@
 header {
   background: green;
-  height: 40px;
-  margin-bottom: 0px;
-
+  padding: 1rem 0;
   text-align: center;
 }
 footer {
   background: burlywood;
-  height: 40px;
-  margin-bottom: 0px;
-
+  padding: 1rem 0;
   text-align: center;
 }
 
-.custimg {
-  margin-bottom: 20px;
+img {
+  margin-bottom: 1rem;
 }
 
 .menulist {
