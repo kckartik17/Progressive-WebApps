@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-group">
+      <label for="area">Text:</label>
+      <textarea
+        class="form-control"
+        id="area"
+        style="width:500px;"
+        onchange="cal()"
+      ></textarea>
+    </div>
+
+    <h2>Words : <span id="words">0</span></h2>
+    <h2>Letters : <span id="letters">0</span></h2>
+    <h2>Paragraphs : <span id="para">0</span></h2>
+
+    <script src="main.js"></script>
+    <script src="model.js"></script>
+  </body>
+</html>
