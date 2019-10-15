@@ -3,7 +3,26 @@ window.addEventListener("load", bindEvents);
 function bindEvents() {
   document.querySelector("#add").addEventListener("click", addRecord);
 }
+let count = 0;
 
 function addRecord() {
-  console.log("Add Record");
+  var item = new Item();
+  for (let key in item) {
+    item[key] = document.getElementById(key).value;
+  }
+
+  count = count + 1;
+  itemOperations.add(item);
+  printRecord(item);
+}
+
+function printRecord(item) {
+  var tbody = document.querySelector("#items");
+  var tr = tbody.insertRow();
+  var index = 0;
+  for (let key in item) {
+    let cell = tr.insertCell(index);
+    cell.innerText = item[key];
+    index++;
+  }
 }
