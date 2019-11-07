@@ -6,5 +6,6 @@ class Item {
     this.desc = desc;
     this.color = color;
     this.url = url;
+    this.isMarked = false;
   }
 }
