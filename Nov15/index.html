@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CRUD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script src="js/item.js"></script>
+    <script src="js/itemOperations.js"></script>
+    <script src="js/controller.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="alert-danger text-center">Nov 15 CRUD App</h1>
+      <div class="form-group">
+        <label for="">Product Id</label>
+        <input id="id" class="form-control" placeholder="Type ID here" type="number"></input>
+      </div>
+      <div class="form-group">
+        <label for="">Product Name</label>
+        <input
+          id="name"
+          class="form-control"
+          placeholder="Type Name Here"
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Product Price</label>
+        <input
+          id="price"
+          class="form-control"
+          type="number"
+          placeholder="Enter Price"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Product Qty</label>
+        <input
+          id="qty"
+          class="form-control"
+          placeholder="Type Name Here"
+          type="number"
+        />
+      </div>
+      <div class="form-group">
+        <button id="add" class="btn btn-primary">Add</button>
+        <button id="save" class="btn btn-success">Save to local storage</button>
+        <button id="load" class="btn btn-warning">Load to local storage</button>
+        <button id="sort" class="btn btn-primary">Sort</button>
+        <button class="btn btn-dark">Clear All</button>
+      </div>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Qty</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -40,9 +40,9 @@ const sortByPrice = () => printTable(itemOperations.sortByPrice());
 function saveRecords() {
   if (localStorage) {
     localStorage.myitems = JSON.stringify(itemOperations.items);
-    alert("Data Store....");
+    alert("Data Stored successfully....");
   } else {
-    alert("NO Local Storage Feature is Supported in Ur Browser...");
+    alert("No Local Storage Feature is Supported in your Browser...");
   }
 }
 
@@ -55,7 +55,7 @@ function loadRecords() {
       alert("No Data to Load...");
     }
   } else {
-    alert("NO Local Storage Feature is Supported in Ur Browser...");
+    alert("No Local Storage Feature is Supported in your Browser...");
   }
 }
 

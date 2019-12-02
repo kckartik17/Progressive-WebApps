@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lab Test</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="design.css" /> -->
+    <script src="js/classRoom.js"></script>
+    <script src="js/roomOperations.js"></script>
+    <script src="js/homeClassRoom.js"></script>
+
+    <script src="js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="alert-success text-center">Lab Test</h1>
+      <div class="form-group">
+        <label for="">Room No</label>
+        <input
+          id="roomNo"
+          class="form-control"
+          placeholder="Enter Room No"
+          type="number"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Occupancy</label>
+        <input
+          id="occupancy"
+          class="form-control"
+          placeholder="Enter Occupancy"
+          type="number"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Class</label>
+        <input
+          id="cls"
+          class="form-control"
+          placeholder="Enter class"
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Section</label>
+        <input
+          id="sec"
+          class="form-control"
+          placeholder="Enter section"
+          type="text"
+        />
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="free" />
+        <label class="form-check-label" for="free">Is class room free ?</label>
+      </div>
+      <div class="form-group">
+        <button id="add" class="btn btn-primary">Add</button>
+        <button id="search" class="btn btn-info">Search</button>
+        <button id="update" class="btn btn-secondary">Update</button>
+        <button id="save" class="btn btn-success">Save</button>
+        <button id="load" class="btn btn-warning">Load</button>
+        <button id="sort" class="btn btn-primary">Sort</button>
+        <button id="find" class="btn btn-primary">Find rooms vacant</button>
+
+        <button class="btn btn-dark">Clear All</button>
+      </div>
+
+      <h3>Rooms Vacant : <span id="vacant"></span></h3>
+
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Room No</th>
+            <th>Occupancy</th>
+            <th>Time Table</th>
+            <th colspan="2">HomeClassRoom</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
